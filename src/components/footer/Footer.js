@@ -2,7 +2,7 @@
 export default function Footer(){
     return(
         <footer>
-            <h1>footer</h1>
+            <h1>Journey On ... </h1>
         </footer>
     )
 }
