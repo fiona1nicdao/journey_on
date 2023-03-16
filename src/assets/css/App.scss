@@ -16,37 +16,64 @@ $desktop:1000px;
       font-size: 40px;
       padding: 100px 0px 0px 0px;
     }
-    .image-container{
-      display: flex;
-      justify-content: right;
-      // width: 300px;
-      overflow: hidden;
-      @media screen and (min-width:$tablet){
-        width: 500px;
-      }
-      .earth{
-        position:relative;
-        width:700px;
-        top:-70px;
-        left: 200px;
-        @media screen and (min-width:$tablet){
-          top:-100px;
-          left:50px;
-          width: 700px;
-        }
+    .container{
+      display: block;
+      @media screen and (min-width:$mini-desktop){
+        display: flex;
+        flex-direction: row-reverse;
 
       }
+      .image-container{
+        display: flex;
+        justify-content: right;
+        // width: 300px;
+        overflow: hidden;
+        @media screen and (min-width:$tablet){
+          // width: 500px;
+        }
+        .earth{
+          position:relative;
+          width:700px;
+          top:-70px;
+          left: 200px;
+          @media screen and (min-width:$tablet){
+            // top:-100px;
+            // left:50px;
+            width: 800px;
+            margin: auto 0;
+          }
+          @media screen and (min-width:$desktop){
+            width: 1000px;
+          }
+  
+        }
+      }
+      .home-page-content{
+        position: relative;
+        top:-100px;
+
+        width: 280px;
+        margin: auto;
+        @media screen and (min-width:$tablet){
+          width: 400px;
+        }
+        @media screen and (min-width:$mini-desktop){
+          padding: 60px 0px 0px 50px;
+          width: 500px;
+        }
+        @media screen and (min-width:$desktop){
+          padding: 0px 0px 100px 50px;
+          width: 500px;
+        }
+      }
     }
-    .home-page-content{
-      position: relative;
-      top:-100px;
-    }
+
   }
 
   footer{
     color:#c5c2c2;
     position: relative;
-    // bottom: 0px;
+    bottom: 20px;
   }
 }
 
