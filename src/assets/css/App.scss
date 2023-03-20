@@ -84,9 +84,25 @@ $desktop:1000px;
 
   }
   .travel-page{
+    padding: 10px;
+    .city-container{
+      @media screen and (min-width:$mini-desktop){
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      .city-image{
+        padding: 10px;
+      }
+      }
+    }
+  }
+  .code-page{
     padding: 100px;
   }
-
+  .test-page{
+    padding:100px;
+  }
   footer{
     color:#c5c2c2;
     position: relative;
