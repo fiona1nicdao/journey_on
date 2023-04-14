@@ -22,6 +22,7 @@ export default function Travel(){
                 <div  className="city-image-container"> 
                     <img className="image-city" alt="zurich river view" src={zurich}/>
                 </div>
+                
             </div>
         </section>
     )
