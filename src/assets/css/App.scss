@@ -91,8 +91,15 @@ $desktop:1000px;
       flex-wrap: wrap;
       justify-content: center;
 
-      .city-image{
+      .city-image-container{
         padding: 10px;
+        .image-city{
+          width: 280px;
+          height: 280px;
+        }
+        .image-city:hover{
+          opacity: 0.5;
+        }
       }
       }
     }
