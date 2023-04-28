@@ -12,17 +12,49 @@ $desktop:1000px;
   text-align: center;
 
   .header{
-    padding: 20px;
-    a{
-      color: #ffffff;
-      font-size: 30px;
-      font-weight: 900;
-      padding: 0px 30px 0px 0px;
-      text-decoration: none;
+    .dropdown{
+      display: flex;
+      flex-direction: column;
+      text-align: right;
+      padding: 20px;
+      position: relative;
+      .dropdown-menu-button{
+        text-align: right;
+        color:#ffffff;
+        background: none;
+        border: none;
+        font-size: 40px;
+        padding:0px 30px 10px 0px;
+        // @media screen and (min-width:500px) {
+        //   display: none;
+        // }
+      }
+      .menu a{
+        display:none;
+        // position: absolute;
+        
+        // a{
+        //   display: block;
+          color: #ffffff;
+        //   font-size: 30px;
+        //   font-weight: 900;
+        //   padding: 0px 30px 0px 0px;
+        //   text-decoration: none;
+        //   // @media screen and (min-width:$tablet){
+        //   //   display: inline;
+        //   // }
+        // }
+        // a:hover{
+        //   color: #82aad8;
+        // }
+      }
+      .dropdown-menu-button:hover .menu a{
+        display: block;
+      }
+
     }
-    a:hover{
-      color: #82aad8;
-    }
+
+
   }
 
   .home-page{
